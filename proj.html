@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="proj1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="imagebg">
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="nav navbar-nav navbar-right" class="a" style="margin-top:0.1%">
+                <li>
+                    <form class="form-inline my-2 my-lg-0" class="b">
+
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search by Artist" aria-label="Search" id="artist1">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search by Song" aria-label="Search" id="song1">
+                        <a href="#id5">
+                        </a>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search#1" onclick="display()">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+
+
+                    </form>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--  <nav class="navbar navbar-inverse" class="icon">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="font-size: 120%">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#" style="font-family: cursive">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family: cursive">Mood
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="font-family: cursive">Artists</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="form-inline my-2 my-lg-0" style="margin-top: 10px">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Artist" aria-label="Search" id="artist1">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Song" aria-label="Search" id="song1">
+                            <a href="#id5">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search#1" onclick="display()">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </a>
+
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="myPageContent" class="container-fluid">
+            <section id="home">
+
+
+
+
+                <div id="textSlider" class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
+                        <div class="scroller">
+                            <div class="inner">
+                                <p>WHEN WORDS FAIL</p>
+                                <p>MUSIC SPEAKS</p>
+                                <p>
+                                    <i class="fa fa-music" style="width: 50px;height: 50px;"></i>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>-->
+        <div>
+
+
+            <div class="container" style="margin-top: 900px;width:100%;height:200px;background-color: rgb(0, 0, 0)">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+                    <h2 style="font-family: sans-serif; text-align: center;font-size: 300%;color: rgb(255, 255, 255) ">TOP ARTISTS</h2>
+                    <br/>
+                    <!-- Indicators -->
+                    <!--<ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>-->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <span style="align-content: center">
+
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="Hariharan.jpg" alt="Hariharan" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">
+                                            <p id="HARIHARAN">HARIHARAN</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="kUk5w66s_400x400.jpg" alt="Hariharan" class="imagev" sty>
+                                    <br/>
+                                    <button type="button" onclick="" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">K.K</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="The_Weeknd_August_2017.jpg" alt="Hariharan" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">THE WEEKND</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="maxresdefault (1).jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">ARIJIT SINGH</a>
+                                    </button>
+                                </p>
+
+
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <span>
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="shreya_ghoshal.jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">SHREYA GHOSHAL</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="bK1_Bkpq.jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">BRUNO MARS</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="sonu-Nigam.jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">SONU NIGAM</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="12115751_1006876726001441_7005977612027695047_n.jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">SHIRLEY SETIA</a>
+                                    </button>
+                                </p>
+
+                        </div>
+
+                        <div class="item">
+                            <span>
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="©-Esmee-Burgersdijk-Beste-Singer-Songwriter-van-Nederland-171.jpg" alt="New york" class="imagev">
+                                    <br>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">ESMEE BURGER</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="1356669208.jpg" alt="New york" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">RAHAT FATEH ALI KHAN</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="shubha-mudgal.jpg" alt="New york" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">SHUBHA MUGDAL</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="63410284.jpg" alt="New york" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="run()" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">ATIF ASLAM</a>
+                                    </button>
+                                </p>
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="id3">
+
+            <p style="font-size:220%;color:white;margin-top:220px" id="id2"></p>
+            <p style="margin-top: 60px;font-size:170%;font-family:cursive;color:white" id="id1">
+            </p>
+            <h id="id5" style="color:black">hello</h>
+            <p style="margin-top: 60px;font-size:170%;font-family:cursive;color:white" id="id4">
+            </p>
+
+        </div>
+
+
+</body>
+<script src="proj11.js"></script>
+
+</html>

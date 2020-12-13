@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="proj1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+
+    <div class="imagebg">
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="nav navbar-nav navbar-right" class="a" style="margin-top:0.1%">
+                <li>
+                    <form class="form-inline my-2 my-lg-0" class="b" style="margin-top: 4px">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search by Mood" aria-label="Search" id="mood1">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search#1" onclick="display1()">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search by Artist" aria-label="Search" id="artist1">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search by Song" aria-label="Search" id="song1">
+
+
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search#1" onclick="display()">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+
+
+                    </form>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+        <div id="myPageContent" class="container-fluid">
+            <section id="home">
+                <div id="textSlider" class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
+                        <div class="scroller">
+                            <div class="inner">
+                                <p>MUSIC IS LIFE</p>
+                                <p>AND THAT'S WHY</p>
+                                <P>OUR HEARTS HAVE</P>
+                                <P style="font-family: fantasy">BEATS
+                                    <i class="fa fa-music" style="width: 50px;height: 50px;"></i>
+                                </P>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+        <!--  <nav class="navbar navbar-inverse" class="icon">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" style="font-size: 120%">WebSiteName</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#" style="font-family: cursive">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-family: cursive">Mood
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="font-family: cursive">Artists</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="form-inline my-2 my-lg-0" style="margin-top: 10px">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Artist" aria-label="Search" id="artist1">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by Song" aria-label="Search" id="song1">
+                            <a href="#id5">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search#1" onclick="display()">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </a>
+
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="myPageContent" class="container-fluid">
+            <section id="home">
+
+
+
+
+                <div id="textSlider" class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
+                        <div class="scroller">
+                            <div class="inner">
+                                <p>WHEN WORDS FAIL</p>
+                                <p>MUSIC SPEAKS</p>
+                                <p>
+                                    <i class="fa fa-music" style="width: 50px;height: 50px;"></i>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>-->
+        <div>
+
+
+            <div class="container" style="margin-top: 900px;width:100%;height:200px;background-color: rgb(0, 0, 0)">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%">
+                    <h2 style="font-family: 'Courier New', Courier, monospace; text-align: center;font-size: 300%;color: rgb(255, 255, 255) ">TOP ARTISTS TOP TRACKS</h2>
+                    <br/>
+                    <!-- Indicators -->
+                    <!--<ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>-->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <span style="align-content: center">
+
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="adele.jpg" alt="adele" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('ADELE')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">
+                                            ADELE
+                                        </a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="coldplay.jpg" alt="coldplay" class="imagev" sty>
+                                    <br/>
+                                    <button type="button" onclick="topTen('COLDPLAY')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">COLDPLAY</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="eminem.jpg" alt="eminem" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('EMINEM')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">EMINEM</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+
+                                    <img src="Linkin-park.jpg" alt="Linkin Park" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTEN('LINKIN PARK')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">LINKIN PARK</a>
+                                    </button>
+                                </p>
+
+
+                            </span>
+                        </div>
+
+                        <div class="item">
+                            <span>
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="twenty-one-pilots.png" alt="twenty-one-pilots" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('TWENTY ONE PILOTS')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">TWENTY ONE PILOTS</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="bK1_Bkpq.jpg" alt="Chicago" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen
+                                    ('BRUNO MARS')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">BRUNO MARS</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="rihanna.jpg" alt="rihanna" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('RIHANNA')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">RIHANNA</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="pink-floyd.jpg" alt="Pink Floyd" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('PINK FLOYD')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">PINK FLOYD</a>
+                                    </button>
+                                </p>
+
+                        </div>
+
+                        <div class="item">
+                            <span>
+                                <p class="IMAG">
+                                    <img src="okok.jpg" alt="ok" style="height: 200px;width: 100px">
+                                    <img src="Queen.jpg" alt="Queen" class="imagev">
+                                    <br>
+                                    <button type="button" onclick="topTen('QUEEN')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">QUEEN</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="maroon-5.jpg" alt="New york" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('MAROON 5')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">MAROON 5</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="imagine-dragons.png" alt="imagine-dragons" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('IMAGINE DRAGONS')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">IMAGINE DRAGONS</a>
+                                    </button>
+                                </p>
+                                <p class="IMAG">
+                                    <img src="green-day.png" alt="green-day" class="imagev">
+                                    <br/>
+                                    <button type="button" onclick="topTen('GREEN DAY')" class="but">
+                                        <a href="#id1" style="font-family: sans-serif; color: rgb(240, 240, 240)">GREEN DAY</a>
+                                    </button>
+                                </p>
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 2vw;padding: 50px;height: 1000px; margin-top: 400px" class="container">
+            <center>
+                <img src="511389623.jpg" class="img2" class="img-responsive">
+                <div class="text-block">
+                    <h2 style="text-align: center;color: floralwhite">
+                        MUSIC TO US
+                    </h2>
+
+                </div>
+            </center>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="text-block1">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p style="padding: 50px;color: snow;font-size: 2vw;text-align: center; font-family: Alex Brush">The human soul is hungry for beauty; we seek it everywhere - in landscape, music, art, clothes, furniture,
+                    gardening, companionship, love, religion, and in ourselves. No one would desire not to be beautiful.
+                    When we experience the beautiful, there is a sense of homecoming. </p>
+            </div>
+        </div>
+        <div id="id3" class="divi">
+
+            <p style="margin-top:0px;font-size:300%;font-family:sofia;color:rgb(243, 255, 131);text-align: center" id="id1">
+            </p>
+            <p style="font-size:180%;color:rgb(203, 255, 248);margin-top:40px ;text-align: center" id="id2"></p>
+
+            <p style="margin-top: 60px;font-size:180%;font-family:cursive;color:rgb(253, 221, 251);text-align: center" id="id4">
+            </p>
+
+        </div>
+
+        <div style="background-image: url(abstract-dark-blue-polygonal-background_1035-9700.jpg);margin-top: 100px;padding: 20px;font-size: 150%">
+            <footer style="margin-left: 30px;">
+                <p style="font-family: cursive;color: rgb(216, 216, 216)">Ph: 7295866575</p>
+                <p style="font-family: cursive;color: rgb(214, 214, 214)">e-mail: sailasya1998@gmail.com </p>
+            </footer>
+        </div>
+
+</body>
+<script src="proj11.js"></script>
+
+</html>
